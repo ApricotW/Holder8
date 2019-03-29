@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+    </android.support.v4.view.ViewPager>
+    <com.yinglan.alphatabs.AlphaTabsIndicator android:layout_width="match_parent"
+                                              android:id="@+id/topbar"
+                                              android:layout_height="70dp" app:layout_constraintTop_toTopOf="parent"
+                                              app:layout_constraintStart_toStartOf="parent"
+                                              android:background="@color/colorPrimaryDark"
+                                              android:alpha="0.9"
+                                              app:layout_constraintEnd_toEndOf="parent">
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                app:tabIconNormal="@mipmap/stack_used"
+                app:tabIconSelected="@mipmap/stack_used"
+                app:badgeBackgroundColor="@color/colorAccent"/>
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                app:tabIconNormal="@drawable/user_icon"
+                app:tabIconSelected="@drawable/user_icon"
+                app:badgeBackgroundColor="@color/colorAccent"/>
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                app:tabIconNormal="@mipmap/bell"
+                app:tabIconSelected="@mipmap/bell"
+                app:badgeBackgroundColor="@color/colorAccent"/>
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+            android:id="@+id/alphaIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+
+                app:tabIconNormal="@mipmap/sos_not_used"
+                app:tabIconSelected="@mipmap/sos_used"
+                app:tabText="急救"
+                app:tabTextSize="10sp"
+                app:textColorNormal="#808080"
+                app:textColorSelected="@color/colorPrimary"
+                app:badgeBackgroundColor="@color/colorAccent"
+                app:paddingTexwithIcon="10dp"/>
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+
+                app:tabIconNormal="@mipmap/homepage_not_used"
+                app:tabIconSelected="@mipmap/homepage_used"
+                app:tabText="首页"
+                app:tabTextSize="10sp"
+                app:textColorNormal="#808080"
+                app:textColorSelected="@color/colorPrimary"
+                app:badgeBackgroundColor="@color/colorAccent"
+                app:paddingTexwithIcon="10dp"/>
+        <com.yinglan.alphatabs.AlphaTabView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+
+                app:tabIconNormal="@mipmap/data_not_used"
+                app:tabIconSelected="@mipmap/data_used"
+                app:tabText="数据"
+                app:tabTextSize="10sp"
+                app:textColorNormal="#808080"
+                app:textColorSelected="@color/colorPrimary"
+                app:badgeBackgroundColor="@color/colorAccent"
+                app:paddingTexwithIcon="10dp"/>
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <!--centerCrop可以对图像进行等比拉伸之后取中间部分。-->
+    <ImageView
+            android:id="@+id/splashImage"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splashimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</android.support.constraint.ConstraintLayout>
